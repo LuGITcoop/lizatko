@@ -1,0 +1,87 @@
+/*GENERAL*/
+html {
+	box-sizing: border-box;
+}
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+
+/* clearfix */
+.group:before,
+.group:after { content: " "; display: table; }
+.group:after { clear: both; }
+
+
+body {
+	color: #2f2f2f;
+	font: 0.9em/1.35em 'Avant Garde', 'Century Gothic', sans-serif;
+	padding: 1.4em;
+	max-width: 100%;
+}
+
+p {
+	margin: 0;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+.container {
+	width: 960px;
+	margin: 0 auto;
+}
+
+article {
+	width: 300px;
+	float: left;
+	margin: 0 10px;
+}
+
+.image {
+	text-align: center;
+}
+
+@media (max-width:1010px){
+	.container {
+		width: 100%;
+		}
+	article {
+		width: 100%;
+		}
+
+	.image {
+		max-width: 40%;
+		float: left;
+		padding: 0 0 3em 0em;
+	}
+	.text{
+		max-width: 60%;
+		float: left;
+		padding: 0 0 3em 3em;
+		}
+	h3{
+		margin: 0;
+		padding: 0 0 .5em;
+		}
+
+@media (max-width:585px){
+	.image {
+		max-width: 100%;
+		text-align: center;
+		float: none;
+		padding: 0 0 2em;
+	}
+	.text{
+		max-width: 100%;
+		text-align: center;
+		margin: 0em 2em 0 0;
+		float: none;
+	}
+	p {
+		border-bottom: 1px solid #ccc;
+		padding: 0 2em 2em;
+	}
+	.container article:last-child .text p{ 
+		border:none;}
